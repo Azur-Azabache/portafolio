@@ -318,6 +318,15 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 h5{
 	font-size: 16px;
 }
+.mark{
+	font-size: 18px;
+	font-weight: 900;
+	float: right;
+	padding: 0 8px;
+}
+.postit{
+	background: url(../assets/images/post.png) no-repeat center center fixed;
+}
 /********************************************************/
 /*                MEDIA QUERYS			                   */
 /********************************************************/
