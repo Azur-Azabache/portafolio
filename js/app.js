@@ -1,10 +1,7 @@
-$(document).ready(function() {
-var item;
-var hideTime = 1000;
-var showTime = 1000;
-
 $(document).ready(function($) {
-
+	var item;
+	var hideTime = 1000;
+	var showTime = 1000;
 	// Cambiar sección
 	$("a", '.mainmenu').click(function(){
 		if( ! $(this).hasClass('active') ) {
@@ -19,5 +16,4 @@ $(document).ready(function($) {
 			} );
 		}
 	});
-});
 });

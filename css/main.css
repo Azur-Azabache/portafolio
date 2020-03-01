@@ -20,6 +20,29 @@ body {
 	font-weight: normal;
 }
 
+/*  Reutilizables  */
+
+.display-flex{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+.height-100{
+	height: 100%;
+}
+.no-margin{
+	margin: 0px;
+}
+.float-none{
+	float: none;
+}
+.color-black{
+	background: black;
+	padding: 10px;
+}
+
+
 /********************************************************/
 /*                    Barra de navegación                */
 /********************************************************/
@@ -140,6 +163,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 	font-weight:normal;
 	font-size:1.5em;
 	line-height:1.2em;
+	margin: 50px 0;
 }
 
 .title,
@@ -220,12 +244,65 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 }
 
 .list-social .btn {
-	font-size:1.3em;
+	font-size: 1.1em;
+	font-weight: bold;
 }
 .list-social .btn:hover, .list-social .btn:active, .list-social .btn:focus {
 	text-decoration: none;
 }
+.list-social li{
+	display: block;
+}
 
+.slide{
+	padding: 30px 0px 15px;
+	position: relative;
+}
+
+.slide .back-image{
+    width: 100%;
+}
+.slide .caption{
+	padding: 20px 0px;
+}
+.slide .caption h3{
+	margin: 0px;
+	margin-bottom: 10px;
+}
+.slide .caption p{
+	margin: 0px;
+}
+.slide .caption .text{
+	height: 100px;
+}
+/* LISTA DE TECNOLOGÍAS */
+.slide .caption .list-tech{
+	list-style-type: none;
+}
+
+.slide .caption .list-tech li{
+	display: inline-block;
+	background: burlywood;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+	margin: 10px 5px 0 0;
+}
+
+.slide .btn-black{
+	background:black;
+	font-weight: bold;
+	color:white;
+}
+.slide .label{
+	position: absolute;
+	color:	white;
+	background:	black;
+	padding: 7px 10px;
+	font-size: 13px;
+	top: -12px;
+	left: 24px;
+}
 
 /* redes sociales */
 #social {
@@ -301,15 +378,33 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 
 .theme-invert .thumbnail {
 	background-color: rgba(255,255,255,.8);
+	margin-bottom: 40px;
+}
+
+.thumbnail .text{
+    line-height: 1.4;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+	overflow:hidden;
+    text-overflow: ellipsis;
+    height: 138px;
 }
 .thumbnail .caption {
 	color: inherit;
+}
+
+.thumbnail img.bootcamp{
+	height: 210px;
+	width: 100%;
 }
 
 .perfil{
 	width: 300px;
 	border-radius: 10px;
 	border: 4px dashed black;
+}
+.perfil2{
+	margin: 10px 0 20px;
 }
 .hobbys{
 	list-style: none;
@@ -325,7 +420,12 @@ h5{
 	padding: 0 8px;
 }
 .postit{
-	background: url(../assets/images/post.png) no-repeat center center fixed;
+	background: url(../assets/images/post.png) no-repeat center center;
+	height: 400px;
+	display: flex;
+}
+.data{
+	margin: auto;
 }
 /********************************************************/
 /*                MEDIA QUERYS			                   */
@@ -343,3 +443,29 @@ h5{
 		font-size:1.3em;
 	}
 }
+
+@media (min-width: 320px) {
+	.display-flex2 {
+		display: block
+	}
+}
+@media (min-width: 991px) {
+	.display-flex2 {
+		display: flex
+	}
+}
+@media (min-width: 320px) {
+	.perfil2{
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+}
+@media (min-width: 768px) {
+	.perfil2{
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+}
+
