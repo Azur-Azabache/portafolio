@@ -19,26 +19,49 @@ $(document).ready(function($) {
 
 });
 
-$("#watcher").click(function(){
-	$(".fr-content-element").addClass("zoom");
-	vacalola();
-});
-
-$('.zoom').hover(function vacalola() {
-	$(this).addClass('transition');
-}, function() {
-	$(this).removeClass('transition');
-});
-
 $('#mockup2').on('click', function(event) {
     // the page will scroll up without this
     event.preventDefault();
 
     // Fresco API code goes here
     Fresco.show([
-		{url: 'assets/images/home2.png', caption: 'Home - Intranet Universidad Continental' },
-		{ url: 'assets/images/lista_eventos.png', caption: 'Lista de Eventos' },
-		{ url: 'assets/images/recomendaciones.png', caption: 'Inicio y recomendaciones' },
-		{ url: 'assets/images/evento-detalles.png', caption: 'Detalles de los eventos' },
+		{url: 'assets/images/home2.png', caption: 'Home - Intranet Universidad Continental', options:{
+			overflow: true,
+		}
+		 },
+		{ url: 'assets/images/lista_eventos.png', caption: 'Lista de Eventos', options:{
+			overflow: true,
+		} },
+		{ url: 'assets/images/recomendaciones.png', caption: 'Inicio y recomendaciones', options:{
+			overflow: true,
+		} },
+		{ url: 'assets/images/evento-detalles.png', caption: 'Detalles de los eventos', options:{
+			overflow: true,
+		} },
+	]);
+  });
+
+  $('#mockup1').on('click', function(event) {
+    // the page will scroll up without this
+    event.preventDefault();
+
+    // Fresco API code goes here
+    Fresco.show([
+		{url: 'assets/images/home1.png', caption: 'Home - Plataforma web CargaExpress', options:{
+			overflow: true,
+		}
+		 },
+		{ url: 'assets/images/registro.png', caption: 'Vista de registro para transportistas', options:{
+			overflow: true,
+		} },
+		{ url: 'assets/images/seguimiento.png', caption: 'Vista de seguimiento vía Google Maps', options:{
+			overflow: true,
+		} },
+		{ url: 'assets/images/ofertas.png', caption: 'Ofertas de clientes potenciales', options:{
+			overflow: true,
+		} },
+		{ url: 'assets/images/conductores.png', caption: 'Vista de lista de conductores', options:{
+			overflow: true,
+		} },
 	]);
   });
