@@ -260,7 +260,11 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 }
 
 .slide .back-image{
-    width: 100%;
+	width: 100%;
+}
+.slide .back-image img{
+	height: 85px;
+	width: 210px;
 }
 .slide .caption{
 	padding: 20px 0px;
