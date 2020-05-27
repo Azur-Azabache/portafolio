@@ -65,3 +65,35 @@ $('#mockup2').on('click', function(event) {
 		} },
 	]);
   });
+  $('#mockupDelosi').on('click', function(event) {
+    // the page will scroll up without this
+    event.preventDefault();
+
+    // Fresco API code goes here
+    Fresco.show([
+		{url: 'assets/images/delosiChilis.jpg', caption: 'Home - Portal Laboral Chilis', options:{
+			overflow: true,
+		}
+		 },
+		{ url: 'assets/images/mapChilis.jpg', caption: 'Mapa implementado con GoogleMaps API- Portal Laboral Chilis', options:{
+			overflow: true,
+		} },
+		{ url: 'assets/images/rolesChilis.jpg', caption: 'Diferentes roles de trabajo - Portal Laboral Chilis', options:{
+			overflow: true,
+		} },
+		{ url: 'assets/images/stepsChilis.jpg', caption: 'Pasos a seguir durante el proceso de selección Chilis - Portal Laboral Chilis', options:{
+			overflow: true,
+		} },
+	]);
+  });
+  $('#mockupPlace').on('click', function(event) {
+    // the page will scroll up without this
+    event.preventDefault();
+
+    // Fresco API code goes here
+    Fresco.show([
+		{url: 'assets/images/homePlace.jpg', caption: 'Home - PlaceMaking México', options:{
+			overflow: true,
+		}},
+	]);
+  });
