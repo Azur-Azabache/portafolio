@@ -96,4 +96,21 @@ $('#mockup2').on('click', function(event) {
 			overflow: true,
 		}},
 	]);
+	});
+	$('#mockupMaster').on('click', function(event) {
+    // the page will scroll up without this
+    event.preventDefault();
+
+    // Fresco API code goes here
+    Fresco.show([
+		{url: 'assets/images/Onboarding.jpg', caption: 'Onboarding - Maestros App', options:{
+			overflow: true,
+		}},
+		{url: 'assets/images/Home.jpg', caption: 'Login - Maestros App', options:{
+			overflow: true,
+		}},
+		{url: 'assets/images/Registro.jpg', caption: 'Registro - Maestros App', options:{
+			overflow: true,
+		}},
+	]);
   });
