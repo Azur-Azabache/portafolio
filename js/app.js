@@ -103,7 +103,7 @@ $('#mockup2').on('click', function(event) {
 
     // Fresco API code goes here
     Fresco.show([
-		{url: 'assets/images/Onboarding.jpg', caption: 'Onboarding - Maestros App', options:{
+		{url: 'assets/images/OnboardingG.jpg', caption: 'Onboarding - Maestros App', options:{
 			overflow: true,
 		}},
 		{url: 'assets/images/Home.jpg', caption: 'Login - Maestros App', options:{
