@@ -276,9 +276,19 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 .slide .caption p{
 	margin: 0px;
 }
-.slide .caption .text{
-	height: 100px;
+
+@media (min-width: 320px) {
+	.slide .caption .text{
+		height: 120px;
+	}
+  }
+
+@media (min-width: 768px) {
+	.slide .caption .text{
+		height: 100px;
+	}
 }
+
 /* LISTA DE TECNOLOGÍAS */
 .slide .caption .list-tech{
 	list-style-type: none;
