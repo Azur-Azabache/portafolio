@@ -71,17 +71,17 @@ $('#mockup2').on('click', function(event) {
 
     // Fresco API code goes here
     Fresco.show([
-		{url: 'assets/images/delosiChilis.jpg', caption: 'Home - Portal Laboral Chilis', options:{
+		{url: 'assets/images/delosiChilis.png', caption: 'Home - Portal Laboral Chilis', options:{
 			overflow: true,
 		}
 		 },
-		{ url: 'assets/images/mapChilis.jpg', caption: 'Mapa implementado con GoogleMaps API- Portal Laboral Chilis', options:{
+		{ url: 'assets/images/kfc.png', caption: 'Home - Portal Laboral Kentucky Friend Chicken', options:{
 			overflow: true,
 		} },
-		{ url: 'assets/images/rolesChilis.jpg', caption: 'Diferentes roles de trabajo - Portal Laboral Chilis', options:{
+		{ url: 'assets/images/kfc1.png', caption: 'Oportunidades Mapa - Portal Kentucky Fried Chicken', options:{
 			overflow: true,
 		} },
-		{ url: 'assets/images/stepsChilis.jpg', caption: 'Pasos a seguir durante el proceso de selección Chilis - Portal Laboral Chilis', options:{
+		{ url: 'assets/images/mtt.png', caption: 'Home - Madam Tusan', options:{
 			overflow: true,
 		} },
 	]);
