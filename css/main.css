@@ -1,5 +1,5 @@
 html {
-	background:#505D6E url(../assets/images/body4.jpg) no-repeat center center fixed;
+	background:#505D6E url(../assets/images/white.jpg) no-repeat center center fixed;
 	min-height:100%;
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
@@ -13,8 +13,8 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-webkit-overflow-scrolling: touch;
 	line-height: 1.5em;
-	font-size:16px;
-	font-family: 'Nunito', sans-serif;
+	font-size:15px;
+	font-family: 'Mukta', sans-serif;
 	color:#fff;
 	color:rgba(255,255,255,.8);
 	font-weight: normal;
@@ -50,7 +50,10 @@ body {
 	z-index: 9999;
 	width:100%;
 	padding: 30px 0 0 0;
-	background: url(../assets/images/wood2.jpg);
+	background: linear-gradient(
+		90deg
+		, rgba(27,27,27,1) 0%, rgba(73,73,73,1) 50%, rgba(27,27,27,1) 100%);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .nav-tabs {
@@ -238,6 +241,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 	-webkit-border-radius: 2px;
 	   -moz-border-radius: 2px;
 	        border-radius: 2px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);		
 }
 .thumbnail .caption {
 	color: inherit;
@@ -305,7 +309,6 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 
 .slide .btn-black{
 	background:black;
-	font-weight: bold;
 	color:white;
 }
 .slide .label{
@@ -316,6 +319,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 	font-size: 13px;
 	top: -12px;
 	left: 24px;
+	font-weight: 200;
 }
 
 /* redes sociales */
@@ -332,7 +336,6 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 /***********************************************************/
 .theme-invert {
 	color:#222;
-	color:rgba(0,0,0,.8);
  }
 .theme-invert a {
 	color:#fff;
@@ -366,7 +369,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 .theme-invert .title,
 .theme-invert .subtitle,
 .theme-invert .tagline {
-	color:#222222;
+	color: #222;
 }
 
 .theme-invert .btn-default {
@@ -401,7 +404,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
     -webkit-box-orient: vertical;
 	overflow:hidden;
     text-overflow: ellipsis;
-    height: 138px;
+    height: 130px;
 }
 .thumbnail .caption {
 	color: inherit;
@@ -415,7 +418,6 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 .perfil{
 	width: 300px;
 	border-radius: 10px;
-	border: 4px dashed black;
 }
 .perfil2{
 	margin: 10px 0 20px;
@@ -441,6 +443,22 @@ h5{
 .data{
 	margin: auto;
 }
+
+p.display-flex a{
+	margin: 0px 10px;
+}
+
+.nav-tabs>li>a {
+	margin-right: 0px;
+}
+
+.brands{
+	width: 90%;
+}
+.resume{
+	font-size: 18px;
+}
+
 /********************************************************/
 /*                MEDIA QUERYS			                   */
 /********************************************************/
@@ -482,6 +500,17 @@ h5{
 		display: block;
 	}
 }
+@media (min-width: 320px) {
+	.nav>li>a {
+		padding: 10px 7px;
+	}
+}
+@media (min-width: 400px) {
+	.nav>li>a {
+		padding: 10px 15px;
+	}
+}
+
 
 /* Efectos */
 
