@@ -170,7 +170,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 }
 
 .title,
-.subtitle {
+.subtitle, .secondTitle {
 	font-family: 'Wire One', Helvetica, Arial, sans-serif;
 	font-weight:normal;
 	font-size:7em;
@@ -189,6 +189,9 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 	line-height:1.3em;
 	font-weight:normal;
 	margin-bottom:75px;
+}
+.secondTitle{
+	font-size:5em;
 }
 
 
@@ -331,6 +334,33 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 	width:340px;
 	margin:0 auto;
 }
+
+.logotype{
+	background-image: url(../assets/images/aenza.png);
+	height: 200px;
+    width: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: auto;
+}
+
+.cumbra{
+	background-image: url(../assets/images/cumbra.png);
+}
+
+.unna{
+	background-image: url(../assets/images/unna.png);
+}
+
+.viva{
+	background-image: url(../assets/images/viva.png);	
+}
+
+.qualys{
+	background-image: url(../assets/images/qualys.png);
+}
+
 /***********************************************************/
 /*                  Colores				                        */
 /***********************************************************/
@@ -366,7 +396,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 	color:#000;
 }
 
-.theme-invert .title,
+.theme-invert .title, .secondTitle,
 .theme-invert .subtitle,
 .theme-invert .tagline {
 	color: #222;
@@ -406,6 +436,16 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
     text-overflow: ellipsis;
     height: 130px;
 }
+
+.thumbnail .newtext{
+    line-height: 1.4;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+	overflow:hidden;
+    text-overflow: ellipsis;
+    height: 50px;
+}
+
 .thumbnail .caption {
 	color: inherit;
 }
