@@ -185,10 +185,10 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 	margin-bottom:40px;
 }
 .tagline {
-	font-size:1.4em;
+	font-size:15px;
 	line-height:1.3em;
 	font-weight:normal;
-	margin-bottom:75px;
+	margin: 120px 0;
 }
 .secondTitle{
 	font-size:5em;
@@ -361,6 +361,24 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 	background-image: url(../assets/images/qualys.png);
 }
 
+.back-image-cummins{
+	background-image: url(../assets/images/cummins.jpg);
+}
+
+
+
+.back-image-oechsle{
+	background-image: url(../assets/images/oechsle.jpg);
+}
+
+.back-image-caja{
+	background-image: url(../assets/images/LaCaja.png);
+}
+
+.back-image-gorilla{
+	background-image: url(../assets/images/gorilla.jpg);
+}
+
 /***********************************************************/
 /*                  Colores				                        */
 /***********************************************************/
@@ -456,7 +474,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 }
 
 .perfil{
-	width: 300px;
+	width: 260px;
 	border-radius: 10px;
 }
 .perfil2{
@@ -477,7 +495,7 @@ h5{
 }
 .postit{
 	background: url(../assets/images/post.png) no-repeat center center;
-	height: 400px;
+	height: 350px;
 	display: flex;
 }
 .data{
