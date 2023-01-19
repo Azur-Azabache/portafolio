@@ -67,6 +67,10 @@ body {
     background-color: #000;
 }
 
+.nav>li>a {
+	display: inline-block;
+}
+
 .navbar-toggle {
 	position:relative;
 	float:left;
@@ -559,11 +563,6 @@ p.display-flex a{
 	}
 }
 @media (min-width: 320px) {
-	.nav>li>a {
-		padding: 10px 7px;
-	}
-}
-@media (min-width: 400px) {
 	.nav>li>a {
 		padding: 10px 15px;
 	}
